@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Helpline System</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <u><h1>Student</h1></u>
+      <u><h1>Helpline</h1></u>
+      <u><h1>System</h1></u>
+    </div>
+  </div>
+  
+  <div>
+    <div class="right">
+      <h5>Login</h5>  
+      <p>Don't have an account? <a href="/register_page">Create Your Account</a> it takes less than a minute</p>
+      <form action="/login" method="POST">
+        <div class="inputs">
+          <input type="text" name="username" placeholder="user name" required>
+          <br>
+          <input type="password" name="password" placeholder="password" required>
+        </div>
+        <p>   </p>
+        <button class="button" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
